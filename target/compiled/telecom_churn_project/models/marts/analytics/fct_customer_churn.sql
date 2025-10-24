@@ -1,12 +1,11 @@
-{{ config(materialized='table') }}
 
 select
-  coalesce(zip_code, 'UNKNOWN') as zip_code,
+  zip_code,
   period_start,
   count(*) as customers,
   sum(churn_flag) as churned_customers,
   avg(monthly_charge) as avg_monthly_charge,
   avg(tenure_in_months) as avg_tenure,
   sum(total_revenue) as total_revenue
-from {{ ref('int_customer_metrics') }}
-group by 1, 2;
+from "dev"."main"."int_customer_metrics"
+group by zip_code, period_start

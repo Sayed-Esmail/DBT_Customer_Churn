@@ -1,5 +1,13 @@
-{{ config(materialized='table') }}
 
+  
+    
+    
+
+    create  table
+      "dev"."main"."int_customer_metrics__dbt_tmp"
+  
+    as (
+      
 with base as (
   select
     customer_id,
@@ -8,10 +16,9 @@ with base as (
     tenure_in_months,
     monthly_charge,
     total_revenue,
-    case when lower(customer_status) in ('churned','yes','true','1') then 1 else 0 end as churn_flag
-  from {{ ref('stg_customer_churn') }}
+    case when lower(customer_status) = 'churned' then 1 else 0 end as churn_flag
+  from "dev"."main"."stg_customer_churn"
 )
-
 select
   customer_id,
   zip_code,
@@ -20,4 +27,7 @@ select
   monthly_charge,
   total_revenue,
   churn_flag
-from base;
+from base
+    );
+  
+  
