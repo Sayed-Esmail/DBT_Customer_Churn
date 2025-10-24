@@ -1,0 +1,24 @@
+name: 'telecom_churn_project'
+version: '1.0'
+config-version: 2
+
+profile: 'telecom_churn'
+
+source-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+
+models:
+  telecom_churn_project:
+    +materialized: table
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  telecom_churn_project:
+    +file_format: csv
