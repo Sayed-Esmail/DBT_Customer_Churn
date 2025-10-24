@@ -55,3 +55,60 @@
 [0m10:56:47.929152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d35acd210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d3a1fdad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d35abfe90>]}
 [0m10:56:47.929642 [debug] [MainThread]: Flushing usage events
 [0m10:56:48.314053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:26:18.645210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c751b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c7518d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c753350>]}
+
+
+============================== 11:26:18.650666 | 5e9266b6-efcc-4cf9-8a64-36e33448f3c0 ==============================
+[0m11:26:18.650666 [info ] [MainThread]: Running with dbt=1.9.3
+[0m11:26:18.651329 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug --profiles-dir /home/vscode/.dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:26:18.657475 [info ] [MainThread]: dbt version: 1.9.3
+[0m11:26:18.657993 [info ] [MainThread]: python version: 3.11.14
+[0m11:26:18.658476 [info ] [MainThread]: python path: /usr/local/bin/python3.11
+[0m11:26:18.658938 [info ] [MainThread]: os info: Linux-6.8.0-1030-azure-x86_64-with-glibc2.41
+[0m11:26:18.734558 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m11:26:18.735092 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m11:26:18.735493 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/DBT_Customer_Churn/dbt_project.yml
+[0m11:26:18.765918 [info ] [MainThread]: adapter type: duckdb
+[0m11:26:18.766661 [info ] [MainThread]: adapter version: 1.9.2
+[0m11:26:18.767120 [info ] [MainThread]: Configuration:
+[0m11:26:18.767475 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:26:18.767892 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:26:18.768599 [info ] [MainThread]: Required dependencies:
+[0m11:26:18.769275 [debug] [MainThread]: Executing "git --help"
+[0m11:26:18.771126 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:26:18.771619 [debug] [MainThread]: STDERR: "b''"
+[0m11:26:18.772002 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:26:18.772375 [info ] [MainThread]: Connection:
+[0m11:26:18.772804 [info ] [MainThread]:   database: telecom_churn
+[0m11:26:18.773280 [info ] [MainThread]:   schema: main
+[0m11:26:18.773705 [info ] [MainThread]:   path: telecom_churn.duckdb
+[0m11:26:18.774158 [info ] [MainThread]:   config_options: None
+[0m11:26:18.774561 [info ] [MainThread]:   extensions: None
+[0m11:26:18.774995 [info ] [MainThread]:   settings: {}
+[0m11:26:18.775342 [info ] [MainThread]:   external_root: .
+[0m11:26:18.775673 [info ] [MainThread]:   use_credential_provider: None
+[0m11:26:18.776029 [info ] [MainThread]:   attach: None
+[0m11:26:18.776367 [info ] [MainThread]:   filesystems: None
+[0m11:26:18.776688 [info ] [MainThread]:   remote: None
+[0m11:26:18.777051 [info ] [MainThread]:   plugins: None
+[0m11:26:18.777472 [info ] [MainThread]:   disable_transactions: False
+[0m11:26:18.777961 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m11:26:18.878024 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:26:18.899248 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:26:18.899681 [debug] [MainThread]: On debug: select 1 as id
+[0m11:26:18.900039 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:26:18.910372 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m11:26:18.911264 [debug] [MainThread]: On debug: Close
+[0m11:26:18.911741 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:26:18.912162 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:26:18.912541 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/DBT_Customer_Churn/dbt_project.yml> not found
+
+[0m11:26:18.913390 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.31241634, "process_in_blocks": "0", "process_kernel_time": 0.186041, "process_mem_max_rss": "140260", "process_out_blocks": "24", "process_user_time": 1.303283}
+[0m11:26:18.913912 [debug] [MainThread]: Command `dbt debug` failed at 11:26:18.913789 after 0.31 seconds
+[0m11:26:18.914245 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:26:18.914583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c761450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c9ecb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c286db8d0>]}
+[0m11:26:18.914985 [debug] [MainThread]: Flushing usage events
+[0m11:26:19.307736 [debug] [MainThread]: An error was encountered while trying to flush usage events
