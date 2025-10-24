@@ -49,8 +49,8 @@ select
   "Customer Status"                                as customer_status,
   "Churn Category"                                 as churn_category,
   "Churn Reason"                                   as churn_reason,
-  date('{{ var("analysis_period_start", "2022-04-01") }}') as period_start,
-  date('{{ var("analysis_period_end", "2022-06-30") }}')   as period_end
+  cast('{{ var("analysis_period_start", "2022-04-01") }}' as date) as period_start,
+  cast('{{ var("analysis_period_end", "2022-06-30") }}' as date)   as period_end
 
 from src
 
