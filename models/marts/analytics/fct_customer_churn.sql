@@ -9,4 +9,4 @@ select
   avg(tenure_in_months) as avg_tenure,
   sum(total_revenue) as total_revenue
 from {{ ref('int_customer_metrics') }}
-group by 1, 2;
+group by zip_code, period_start
