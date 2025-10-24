@@ -1,6 +1,10 @@
 with src as (
 
+  -- During dev we point at the sample seed
   select * from {{ ref('telecom_customer_churn_sample') }}
+
+  -- For production, swap to:
+  -- select * from {{ source('raw','telecom_customer_churn') }}
 
 ),
 
@@ -13,7 +17,7 @@ select
   "Married"                                        as married,
   try_cast("Number of Dependents" as integer)      as number_of_dependents,
   "City"                                           as city,
-  trim("Zip Code")                                 as zip_code,
+  trim(cast("Zip Code" as varchar))                as zip_code,
   try_cast("Latitude" as double)                   as latitude,
   try_cast("Longitude" as double)                  as longitude,
   try_cast("Number of Referrals" as integer)       as number_of_referrals,
