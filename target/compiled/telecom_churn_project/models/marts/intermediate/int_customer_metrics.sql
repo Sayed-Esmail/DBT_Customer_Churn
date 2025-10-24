@@ -17,7 +17,7 @@ select
   zip_code,
   period_start,
   tenure_in_months,
-  monthly_charge,
+  greatest(monthly_charge, 0) as monthly_charge,
   total_revenue,
   churn_flag
-from base;
+from base

@@ -1,6 +1,7 @@
 
+
 select
-  zip_code,
+  coalesce(zip_code, 'UNKNOWN') as zip_code,
   period_start,
   count(*) as customers,
   sum(churn_flag) as churned_customers,
