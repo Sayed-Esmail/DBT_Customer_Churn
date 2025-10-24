@@ -4,12 +4,11 @@ config-version: 2
 
 profile: 'telecom_churn'
 
-source-paths: ["models"]
+model-paths: ["models"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
 
 models:
   telecom_churn_project:
