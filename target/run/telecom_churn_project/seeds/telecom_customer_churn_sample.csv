@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."telecom_customer_churn_sample" ("Customer ID" text,"Gender" text,"Age" integer,"Married" text,"Number of Dependents" integer,"City" text,"Zip Code" integer,"Latitude" float8,"Longitude" float8,"Number of Referrals" integer,"Tenure in Months" integer,"Offer" text,"Phone Service" text,"Avg Monthly Long Distance Charges" float8,"Multiple Lines" text,"Internet Service" text,"Internet Type" text,"Avg Monthly GB Download" integer,"Online Security" text,"Online Backup" text,"Device Protection Plan" text,"Premium Tech Support" text,"Streaming TV" text,"Streaming Movies" text,"Streaming Music" text,"Unlimited Data" text,"Contract" text,"Paperless Billing" text,"Payment Method" text,"Monthly Charge" float8,"Total Charges" float8,"Total Refunds" float8,"Total Extra Data Charges" integer,"Total Long Distance Charges" float8,"Total Revenue" float8,"Customer Status" text,"Churn Category" text,"Churn Reason" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."telecom_customer_churn_sample" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_customer_churn_sample.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."telecom_zipcode_population" ("Zip Code" integer,"Population" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."telecom_zipcode_population" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_zipcode_population.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

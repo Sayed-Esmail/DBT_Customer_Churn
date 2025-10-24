@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."telecom_data_dictionary" ("Table" text,"Field" text,"Description" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."telecom_data_dictionary" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_data_dictionary.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

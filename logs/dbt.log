@@ -112,3 +112,832 @@
 [0m11:26:18.914583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c761450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c2c9ecb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x736c286db8d0>]}
 [0m11:26:18.914985 [debug] [MainThread]: Flushing usage events
 [0m11:26:19.307736 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:57.074034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e6d519a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e6d5115d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e6d519910>]}
+
+
+============================== 12:34:57.123384 | 2be29148-4714-468b-892d-c4406d1bb283 ==============================
+[0m12:34:57.123384 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:34:57.124150 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug --profiles-dir /home/vscode/.dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:34:57.135553 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:34:57.136025 [info ] [MainThread]: python version: 3.11.14
+[0m12:34:57.136460 [info ] [MainThread]: python path: /usr/local/bin/python3.11
+[0m12:34:57.136827 [info ] [MainThread]: os info: Linux-6.8.0-1030-azure-x86_64-with-glibc2.41
+[0m12:34:57.302260 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m12:34:57.302795 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m12:34:57.303208 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/DBT_Customer_Churn/dbt_project.yml
+[0m12:34:57.333813 [info ] [MainThread]: adapter type: duckdb
+[0m12:34:57.334266 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:34:57.338278 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m12:34:57.338775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2be29148-4714-468b-892d-c4406d1bb283', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e6d43abd0>]}
+[0m12:34:57.339405 [info ] [MainThread]: Configuration:
+[0m12:34:57.339773 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:34:57.340222 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m12:34:57.340662 [info ] [MainThread]: Required dependencies:
+[0m12:34:57.341111 [debug] [MainThread]: Executing "git --help"
+[0m12:34:57.343581 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:34:57.343991 [debug] [MainThread]: STDERR: "b''"
+[0m12:34:57.344296 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:34:57.344685 [info ] [MainThread]: Connection:
+[0m12:34:57.345126 [info ] [MainThread]:   database: telecom_churn
+[0m12:34:57.345501 [info ] [MainThread]:   schema: main
+[0m12:34:57.345940 [info ] [MainThread]:   path: telecom_churn.duckdb
+[0m12:34:57.346372 [info ] [MainThread]:   config_options: None
+[0m12:34:57.346819 [info ] [MainThread]:   extensions: None
+[0m12:34:57.350010 [info ] [MainThread]:   settings: {}
+[0m12:34:57.350651 [info ] [MainThread]:   external_root: .
+[0m12:34:57.351051 [info ] [MainThread]:   use_credential_provider: None
+[0m12:34:57.351534 [info ] [MainThread]:   attach: None
+[0m12:34:57.351989 [info ] [MainThread]:   filesystems: None
+[0m12:34:57.353020 [info ] [MainThread]:   remote: None
+[0m12:34:57.353883 [info ] [MainThread]:   plugins: None
+[0m12:34:57.354552 [info ] [MainThread]:   disable_transactions: False
+[0m12:34:57.355433 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m12:34:57.498838 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:34:57.768317 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:34:57.768825 [debug] [MainThread]: On debug: select 1 as id
+[0m12:34:57.769175 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:34:58.963779 [debug] [MainThread]: SQL status: OK in 1.195 seconds
+[0m12:34:58.964866 [debug] [MainThread]: On debug: Close
+[0m12:34:58.965418 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:34:58.965814 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:34:58.966219 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  data-paths and seed-paths cannot both be defined. The `data-paths` config has been deprecated in favor of `seed-paths`. Please update your `dbt_project.yml` configuration to reflect this change.
+
+Error encountered in /workspaces/DBT_Customer_Churn/dbt_project.yml
+
+
+[0m12:34:58.967535 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.9369768, "process_in_blocks": "134568", "process_kernel_time": 0.263921, "process_mem_max_rss": "139684", "process_out_blocks": "24", "process_user_time": 1.404262}
+[0m12:34:58.968031 [debug] [MainThread]: Command `dbt debug` failed at 12:34:58.967933 after 1.94 seconds
+[0m12:34:58.968386 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:34:58.968741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e695ac3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e69049e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6e6904a3d0>]}
+[0m12:34:58.969118 [debug] [MainThread]: Flushing usage events
+[0m12:34:59.343249 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:39:41.874217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c62b31290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c629279d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c628d14d0>]}
+
+
+============================== 12:39:41.879601 | bd0578c4-66f1-47b7-8791-8c0a4929e861 ==============================
+[0m12:39:41.879601 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:39:41.880310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug --profiles-dir /home/vscode/.dbt --project-dir /workspaces/DBT_Customer_Churn', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:39:41.886327 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:39:41.886852 [info ] [MainThread]: python version: 3.11.14
+[0m12:39:41.887316 [info ] [MainThread]: python path: /usr/local/bin/python3.11
+[0m12:39:41.887791 [info ] [MainThread]: os info: Linux-6.8.0-1030-azure-x86_64-with-glibc2.41
+[0m12:39:41.964829 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m12:39:41.965384 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m12:39:41.965800 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/DBT_Customer_Churn/dbt_project.yml
+[0m12:39:41.995917 [info ] [MainThread]: adapter type: duckdb
+[0m12:39:41.996430 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:39:42.090550 [info ] [MainThread]: Configuration:
+[0m12:39:42.091047 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:39:42.091477 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:39:42.091845 [info ] [MainThread]: Required dependencies:
+[0m12:39:42.092226 [debug] [MainThread]: Executing "git --help"
+[0m12:39:42.093880 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:39:42.094265 [debug] [MainThread]: STDERR: "b''"
+[0m12:39:42.094611 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:39:42.094973 [info ] [MainThread]: Connection:
+[0m12:39:42.095384 [info ] [MainThread]:   database: telecom_churn
+[0m12:39:42.095840 [info ] [MainThread]:   schema: main
+[0m12:39:42.096286 [info ] [MainThread]:   path: telecom_churn.duckdb
+[0m12:39:42.096740 [info ] [MainThread]:   config_options: None
+[0m12:39:42.097152 [info ] [MainThread]:   extensions: None
+[0m12:39:42.097606 [info ] [MainThread]:   settings: {}
+[0m12:39:42.098053 [info ] [MainThread]:   external_root: .
+[0m12:39:42.098509 [info ] [MainThread]:   use_credential_provider: None
+[0m12:39:42.098926 [info ] [MainThread]:   attach: None
+[0m12:39:42.099397 [info ] [MainThread]:   filesystems: None
+[0m12:39:42.099840 [info ] [MainThread]:   remote: None
+[0m12:39:42.100273 [info ] [MainThread]:   plugins: None
+[0m12:39:42.100724 [info ] [MainThread]:   disable_transactions: False
+[0m12:39:42.101322 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m12:39:42.193410 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:39:42.217054 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:39:42.217491 [debug] [MainThread]: On debug: select 1 as id
+[0m12:39:42.217832 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:39:42.226974 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m12:39:42.227973 [debug] [MainThread]: On debug: Close
+[0m12:39:42.228456 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:39:42.228889 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:39:42.230073 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.3978084, "process_in_blocks": "0", "process_kernel_time": 0.183178, "process_mem_max_rss": "141320", "process_out_blocks": "24", "process_user_time": 1.400715}
+[0m12:39:42.230778 [debug] [MainThread]: Command `dbt debug` succeeded at 12:39:42.230635 after 0.40 seconds
+[0m12:39:42.231288 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:39:42.231707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c62927950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c62926c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x789c5e30ce50>]}
+[0m12:39:42.232104 [debug] [MainThread]: Flushing usage events
+[0m12:39:42.616329 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:52:32.774166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465c379b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465c378a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465c378d50>]}
+
+
+============================== 12:52:32.779567 | e53e1224-9258-4a71-96bb-48fcd15f06e2 ==============================
+[0m12:52:32.779567 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:52:32.780213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init telecom_churn_project', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:52:32.788254 [info ] [MainThread]: Setting up your profile.
+[0m12:53:00.121296 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 27.39255, "process_in_blocks": "56", "process_kernel_time": 0.136506, "process_mem_max_rss": "118124", "process_out_blocks": "24", "process_user_time": 1.180732}
+[0m12:53:00.122258 [debug] [MainThread]: Command `dbt init` succeeded at 12:53:00.122089 after 27.39 seconds
+[0m12:53:00.122864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465d3f7050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465c480590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79465c482210>]}
+[0m12:53:00.123590 [debug] [MainThread]: Flushing usage events
+[0m12:53:00.495930 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:48:45.098525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7894dcfb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c78951212d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7895121150>]}
+
+
+============================== 14:48:45.158273 | 01d96a4a-9c69-40bf-bec9-35035c554304 ==============================
+[0m14:48:45.158273 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:48:45.158968 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir /home/vscode/.dbt --project-dir /workspaces/DBT_Customer_Churn', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:48:46.812445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01d96a4a-9c69-40bf-bec9-35035c554304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7894c8c5d0>]}
+[0m14:48:46.860998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01d96a4a-9c69-40bf-bec9-35035c554304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c78977fc350>]}
+[0m14:48:46.950205 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m14:48:47.196132 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m14:48:47.196776 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:48:47.197276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '01d96a4a-9c69-40bf-bec9-35035c554304', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7890ccea90>]}
+[0m14:48:47.199121 [error] [MainThread]: Encountered an error:
+'utf-8' codec can't decode byte 0x92 in position 129: invalid start byte
+[0m14:48:47.201638 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 327, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 351, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 2069, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 312, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 359, in load
+    file_reader.read_files()
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 212, in read_files
+    self.read_files_for_project(project, file_types)
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 219, in read_files_for_project
+    project_files[file_type_info["parser"]] = read_files_for_parser(
+                                              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 167, in read_files_for_parser
+    source_files = get_source_files(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 148, in get_source_files
+    fb_list.append(load_seed_source_file(fp, project.project_name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 130, in load_seed_source_file
+    file_contents = load_file_contents(match.absolute_path, strip=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt_common/record.py", line 507, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt_common/clients/system.py", line 178, in load_file_contents
+    to_return = handle.read().decode("utf-8")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 129: invalid start byte
+
+[0m14:48:47.203067 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 2.147385, "process_in_blocks": "99864", "process_kernel_time": 0.241856, "process_mem_max_rss": "127124", "process_out_blocks": "16", "process_user_time": 1.511101}
+[0m14:48:47.203626 [debug] [MainThread]: Command `dbt seed` failed at 14:48:47.203494 after 2.15 seconds
+[0m14:48:47.204167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7894e242d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7890cac850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c78994455d0>]}
+[0m14:48:47.204708 [debug] [MainThread]: Flushing usage events
+[0m14:48:47.605252 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:49:42.561916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad823e6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad82432850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad82703d90>]}
+
+
+============================== 14:49:42.567183 | 727e85b7-c02a-4fe6-8373-016d5c7108cd ==============================
+[0m14:49:42.567183 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:49:42.567825 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed --profiles-dir /home/vscode/.dbt --project-dir /workspaces/DBT_Customer_Churn', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:49:42.742507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '727e85b7-c02a-4fe6-8373-016d5c7108cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad8229d9d0>]}
+[0m14:49:42.788607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '727e85b7-c02a-4fe6-8373-016d5c7108cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad84df25d0>]}
+[0m14:49:42.813035 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m14:49:42.898601 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m14:49:42.899199 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:49:42.899618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '727e85b7-c02a-4fe6-8373-016d5c7108cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad82293350>]}
+[0m14:49:42.901280 [error] [MainThread]: Encountered an error:
+'utf-8' codec can't decode byte 0x92 in position 129: invalid start byte
+[0m14:49:42.902751 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 327, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/cli/requires.py", line 351, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 2069, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 312, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/manifest.py", line 359, in load
+    file_reader.read_files()
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 212, in read_files
+    self.read_files_for_project(project, file_types)
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 219, in read_files_for_project
+    project_files[file_type_info["parser"]] = read_files_for_parser(
+                                              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 167, in read_files_for_parser
+    source_files = get_source_files(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 148, in get_source_files
+    fb_list.append(load_seed_source_file(fp, project.project_name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt/parser/read_files.py", line 130, in load_seed_source_file
+    file_contents = load_file_contents(match.absolute_path, strip=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt_common/record.py", line 507, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/dbt_common/clients/system.py", line 178, in load_file_contents
+    to_return = handle.read().decode("utf-8")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 129: invalid start byte
+
+[0m14:49:42.903726 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.38335314, "process_in_blocks": "0", "process_kernel_time": 0.219793, "process_mem_max_rss": "127476", "process_out_blocks": "24", "process_user_time": 1.377435}
+[0m14:49:42.904204 [debug] [MainThread]: Command `dbt seed` failed at 14:49:42.904108 after 0.38 seconds
+[0m14:49:42.904658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad824f2150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad7e297e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dad7e29ed90>]}
+[0m14:49:42.905080 [debug] [MainThread]: Flushing usage events
+[0m14:49:43.264432 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:14.454362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa96dbc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa96db0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa96dbb10>]}
+
+
+============================== 14:56:14.459505 | 93676a88-eb4f-44b8-b377-4c95ba78da3f ==============================
+[0m14:56:14.459505 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:56:14.460132 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --profiles-dir /home/vscode/.dbt --project-dir /workspaces/DBT_Customer_Churn', 'send_anonymous_usage_stats': 'True'}
+[0m14:56:14.636252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa9a29d10>]}
+[0m14:56:14.682231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aac086690>]}
+[0m14:56:14.706950 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m14:56:14.797741 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m14:56:14.798334 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:56:14.798755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa577d250>]}
+[0m14:56:15.574094 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.telecom_churn_project.staging
+- models.telecom_churn_project
+- models.telecom_churn_project.marts
+[0m14:56:15.577973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa5314590>]}
+[0m14:56:15.616220 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/DBT_Customer_Churn/target/manifest.json
+[0m14:56:15.618046 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/DBT_Customer_Churn/target/semantic_manifest.json
+[0m14:56:15.636434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa96a1010>]}
+[0m14:56:15.636895 [info ] [MainThread]: Found 3 seeds, 427 macros
+[0m14:56:15.637278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aab8aad10>]}
+[0m14:56:15.638703 [info ] [MainThread]: 
+[0m14:56:15.639098 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:56:15.639430 [info ] [MainThread]: 
+[0m14:56:15.639949 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:56:15.644304 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m14:56:15.931876 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m14:56:15.932425 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m14:56:15.932791 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:56:17.056027 [debug] [ThreadPool]: SQL status: OK in 1.123 seconds
+[0m14:56:17.057415 [debug] [ThreadPool]: On list_dev: Close
+[0m14:56:17.058280 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m14:56:17.058823 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m14:56:17.064557 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:56:17.064914 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m14:56:17.065222 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:56:17.066509 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:56:17.067605 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:56:17.067959 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m14:56:17.068438 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:56:17.068731 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:56:17.069044 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m14:56:17.069679 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:56:17.070438 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:56:17.070753 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:56:17.071114 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:56:17.071690 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:56:17.072130 [debug] [ThreadPool]: On create_dev_main: Close
+[0m14:56:17.076292 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m14:56:17.095823 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:56:17.096387 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m14:56:17.099022 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:56:17.099975 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:56:17.100499 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:56:17.101699 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m14:56:17.132463 [debug] [ThreadPool]: SQL status: OK in 0.030 seconds
+[0m14:56:17.133520 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m14:56:17.134235 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m14:56:17.134555 [debug] [ThreadPool]: On list_dev_main: Close
+[0m14:56:17.135287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa55f4c50>]}
+[0m14:56:17.135779 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:17.136127 [debug] [MainThread]: On master: BEGIN
+[0m14:56:17.136414 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:56:17.136942 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:56:17.137246 [debug] [MainThread]: On master: COMMIT
+[0m14:56:17.137530 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:17.137811 [debug] [MainThread]: On master: COMMIT
+[0m14:56:17.138265 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:56:17.138564 [debug] [MainThread]: On master: Close
+[0m14:56:17.142277 [debug] [Thread-1 (]: Began running node seed.telecom_churn_project.telecom_customer_churn_sample
+[0m14:56:17.142768 [info ] [Thread-1 (]: 1 of 3 START seed file main.telecom_customer_churn_sample ...................... [RUN]
+[0m14:56:17.143271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now seed.telecom_churn_project.telecom_customer_churn_sample)
+[0m14:56:17.143620 [debug] [Thread-1 (]: Began compiling node seed.telecom_churn_project.telecom_customer_churn_sample
+[0m14:56:17.143986 [debug] [Thread-1 (]: Began executing node seed.telecom_churn_project.telecom_customer_churn_sample
+[0m14:56:17.339241 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_customer_churn_sample"
+[0m14:56:17.339669 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: BEGIN
+[0m14:56:17.340037 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:56:17.340736 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.341118 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_customer_churn_sample"
+[0m14:56:17.341513 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "seed.telecom_churn_project.telecom_customer_churn_sample"} */
+
+    create table "dev"."main"."telecom_customer_churn_sample" ("Customer ID" text,"Gender" text,"Age" integer,"Married" text,"Number of Dependents" integer,"City" text,"Zip Code" integer,"Latitude" float8,"Longitude" float8,"Number of Referrals" integer,"Tenure in Months" integer,"Offer" text,"Phone Service" text,"Avg Monthly Long Distance Charges" float8,"Multiple Lines" text,"Internet Service" text,"Internet Type" text,"Avg Monthly GB Download" integer,"Online Security" text,"Online Backup" text,"Device Protection Plan" text,"Premium Tech Support" text,"Streaming TV" text,"Streaming Movies" text,"Streaming Music" text,"Unlimited Data" text,"Contract" text,"Paperless Billing" text,"Payment Method" text,"Monthly Charge" float8,"Total Charges" float8,"Total Refunds" float8,"Total Extra Data Charges" integer,"Total Long Distance Charges" float8,"Total Revenue" float8,"Customer Status" text,"Churn Category" text,"Churn Reason" text)
+  
+[0m14:56:17.342550 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.351559 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_customer_churn_sample"
+[0m14:56:17.352014 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: 
+          COPY "dev"."main"."telecom_customer_churn_sample" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_customer_churn_sample.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:56:17.403042 [debug] [Thread-1 (]: SQL status: OK in 0.051 seconds
+[0m14:56:17.407729 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.telecom_churn_project.telecom_customer_churn_sample"
+[0m14:56:17.418626 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: COMMIT
+[0m14:56:17.419035 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_customer_churn_sample"
+[0m14:56:17.419381 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: COMMIT
+[0m14:56:17.426974 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m14:56:17.429125 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_customer_churn_sample: Close
+[0m14:56:17.431045 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa5390690>]}
+[0m14:56:17.431559 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file main.telecom_customer_churn_sample .................. [[32mINSERT 2000[0m in 0.29s]
+[0m14:56:17.432154 [debug] [Thread-1 (]: Finished running node seed.telecom_churn_project.telecom_customer_churn_sample
+[0m14:56:17.432544 [debug] [Thread-1 (]: Began running node seed.telecom_churn_project.telecom_data_dictionary
+[0m14:56:17.433084 [info ] [Thread-1 (]: 2 of 3 START seed file main.telecom_data_dictionary ............................ [RUN]
+[0m14:56:17.433541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.telecom_churn_project.telecom_customer_churn_sample, now seed.telecom_churn_project.telecom_data_dictionary)
+[0m14:56:17.433901 [debug] [Thread-1 (]: Began compiling node seed.telecom_churn_project.telecom_data_dictionary
+[0m14:56:17.434247 [debug] [Thread-1 (]: Began executing node seed.telecom_churn_project.telecom_data_dictionary
+[0m14:56:17.437552 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_data_dictionary"
+[0m14:56:17.437974 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: BEGIN
+[0m14:56:17.438300 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:56:17.438910 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.439419 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_data_dictionary"
+[0m14:56:17.439928 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "seed.telecom_churn_project.telecom_data_dictionary"} */
+
+    create table "dev"."main"."telecom_data_dictionary" ("Table" text,"Field" text,"Description" text)
+  
+[0m14:56:17.440759 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:56:17.441773 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_data_dictionary"
+[0m14:56:17.442189 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: 
+          COPY "dev"."main"."telecom_data_dictionary" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_data_dictionary.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:56:17.443867 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.444461 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.telecom_churn_project.telecom_data_dictionary"
+[0m14:56:17.445944 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: COMMIT
+[0m14:56:17.446303 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_data_dictionary"
+[0m14:56:17.446625 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: COMMIT
+[0m14:56:17.448224 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.448906 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_data_dictionary: Close
+[0m14:56:17.449461 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa4731350>]}
+[0m14:56:17.449953 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file main.telecom_data_dictionary ........................ [[32mINSERT 40[0m in 0.02s]
+[0m14:56:17.450496 [debug] [Thread-1 (]: Finished running node seed.telecom_churn_project.telecom_data_dictionary
+[0m14:56:17.450872 [debug] [Thread-1 (]: Began running node seed.telecom_churn_project.telecom_zipcode_population
+[0m14:56:17.451345 [info ] [Thread-1 (]: 3 of 3 START seed file main.telecom_zipcode_population ......................... [RUN]
+[0m14:56:17.451782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.telecom_churn_project.telecom_data_dictionary, now seed.telecom_churn_project.telecom_zipcode_population)
+[0m14:56:17.452143 [debug] [Thread-1 (]: Began compiling node seed.telecom_churn_project.telecom_zipcode_population
+[0m14:56:17.452464 [debug] [Thread-1 (]: Began executing node seed.telecom_churn_project.telecom_zipcode_population
+[0m14:56:17.471929 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_zipcode_population"
+[0m14:56:17.472310 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: BEGIN
+[0m14:56:17.472637 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:56:17.473175 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.473533 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_zipcode_population"
+[0m14:56:17.473875 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "seed.telecom_churn_project.telecom_zipcode_population"} */
+
+    create table "dev"."main"."telecom_zipcode_population" ("Zip Code" integer,"Population" integer)
+  
+[0m14:56:17.474478 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:56:17.475447 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_zipcode_population"
+[0m14:56:17.475819 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: 
+          COPY "dev"."main"."telecom_zipcode_population" FROM '/workspaces/DBT_Customer_Churn/seeds/telecom_zipcode_population.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:56:17.481864 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m14:56:17.482459 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.telecom_churn_project.telecom_zipcode_population"
+[0m14:56:17.483944 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: COMMIT
+[0m14:56:17.484305 [debug] [Thread-1 (]: Using duckdb connection "seed.telecom_churn_project.telecom_zipcode_population"
+[0m14:56:17.484634 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: COMMIT
+[0m14:56:17.486356 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:56:17.487032 [debug] [Thread-1 (]: On seed.telecom_churn_project.telecom_zipcode_population: Close
+[0m14:56:17.487573 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '93676a88-eb4f-44b8-b377-4c95ba78da3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa4730e50>]}
+[0m14:56:17.488054 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file main.telecom_zipcode_population ..................... [[32mINSERT 1671[0m in 0.04s]
+[0m14:56:17.488589 [debug] [Thread-1 (]: Finished running node seed.telecom_churn_project.telecom_zipcode_population
+[0m14:56:17.489577 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:17.489960 [debug] [MainThread]: On master: BEGIN
+[0m14:56:17.490244 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:56:17.490750 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:56:17.491079 [debug] [MainThread]: On master: COMMIT
+[0m14:56:17.491367 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:56:17.491635 [debug] [MainThread]: On master: COMMIT
+[0m14:56:17.492081 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:56:17.492376 [debug] [MainThread]: On master: Close
+[0m14:56:17.492755 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:56:17.493074 [debug] [MainThread]: Connection 'seed.telecom_churn_project.telecom_zipcode_population' was properly closed.
+[0m14:56:17.493413 [info ] [MainThread]: 
+[0m14:56:17.493833 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 1.85 seconds (1.85s).
+[0m14:56:17.494739 [debug] [MainThread]: Command end result
+[0m14:56:17.515174 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/DBT_Customer_Churn/target/manifest.json
+[0m14:56:17.516566 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/DBT_Customer_Churn/target/semantic_manifest.json
+[0m14:56:17.521274 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/DBT_Customer_Churn/target/run_results.json
+[0m14:56:17.521587 [info ] [MainThread]: 
+[0m14:56:17.522081 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:56:17.522427 [info ] [MainThread]: 
+[0m14:56:17.522791 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m14:56:17.523602 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 3.1110396, "process_in_blocks": "41384", "process_kernel_time": 0.240883, "process_mem_max_rss": "166392", "process_out_blocks": "3584", "process_user_time": 2.678585}
+[0m14:56:17.524107 [debug] [MainThread]: Command `dbt seed` succeeded at 14:56:17.524007 after 3.11 seconds
+[0m14:56:17.524448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aaa37a2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aa952d990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767aadcd5890>]}
+[0m14:56:17.524785 [debug] [MainThread]: Flushing usage events
+[0m14:56:17.935182 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:47:24.212430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bef63d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bf084e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bef599d0>]}
+
+
+============================== 19:47:24.321372 | 43fea6e3-559e-4db3-9058-da1d32683585 ==============================
+[0m19:47:24.321372 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:47:24.322154 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/DBT_Customer_Churn/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /home/vscode/.dbt --project-dir /workspaces/DBT_Customer_Churn --models +stg_customer_churn +stg_zipcode_population', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:47:25.883176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bee08f90>]}
+[0m19:47:25.931550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01c194e9d0>]}
+[0m19:47:25.995055 [info ] [MainThread]: Registered adapter: duckdb=1.9.2
+[0m19:47:26.201738 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m19:47:26.303232 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m19:47:26.303876 [debug] [MainThread]: Partial parsing: added file: telecom_churn_project://models/schema.yml
+[0m19:47:26.304280 [debug] [MainThread]: Partial parsing: added file: telecom_churn_project://models/staging/stg_customer_churn.sql
+[0m19:47:26.304619 [debug] [MainThread]: Partial parsing: added file: telecom_churn_project://models/staging/stg_zipcode_population.sql
+[0m19:47:26.746499 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.telecom_churn_project.marts
+[0m19:47:26.757032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01ba45ce90>]}
+[0m19:47:26.839108 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/DBT_Customer_Churn/target/manifest.json
+[0m19:47:26.841883 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/DBT_Customer_Churn/target/semantic_manifest.json
+[0m19:47:26.864881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01ba4f7390>]}
+[0m19:47:26.865415 [info ] [MainThread]: Found 3 seeds, 2 models, 6 data tests, 1 source, 427 macros
+[0m19:47:26.865848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01ba3028d0>]}
+[0m19:47:26.867781 [info ] [MainThread]: 
+[0m19:47:26.868185 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:47:26.868535 [info ] [MainThread]: 
+[0m19:47:26.869071 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:47:26.876856 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m19:47:27.243692 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m19:47:27.244154 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m19:47:27.244499 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:28.324094 [debug] [ThreadPool]: SQL status: OK in 1.079 seconds
+[0m19:47:28.325560 [debug] [ThreadPool]: On list_dev: Close
+[0m19:47:28.326497 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m19:47:28.327071 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m19:47:28.335888 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:47:28.336603 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m19:47:28.337122 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:47:28.344558 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m19:47:28.345809 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:47:28.346134 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m19:47:28.346636 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:47:28.346964 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:47:28.347265 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m19:47:28.347896 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:47:28.348633 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m19:47:28.349005 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:47:28.349320 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m19:47:28.349774 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:47:28.350083 [debug] [ThreadPool]: On create_dev_main: Close
+[0m19:47:28.351390 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m19:47:28.356113 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m19:47:28.356432 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m19:47:28.356734 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:47:28.357269 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m19:47:28.357558 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m19:47:28.357875 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m19:47:28.372883 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m19:47:28.374037 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m19:47:28.374808 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m19:47:28.375116 [debug] [ThreadPool]: On list_dev_main: Close
+[0m19:47:28.376287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01baa12fd0>]}
+[0m19:47:28.376793 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:47:28.377115 [debug] [MainThread]: On master: BEGIN
+[0m19:47:28.377397 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:47:28.377909 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:47:28.378208 [debug] [MainThread]: On master: COMMIT
+[0m19:47:28.378492 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:47:28.378787 [debug] [MainThread]: On master: COMMIT
+[0m19:47:28.379225 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:47:28.379530 [debug] [MainThread]: On master: Close
+[0m19:47:28.382729 [debug] [Thread-1 (]: Began running node model.telecom_churn_project.stg_customer_churn
+[0m19:47:28.383218 [info ] [Thread-1 (]: 1 of 2 START sql view model main.stg_customer_churn ............................ [RUN]
+[0m19:47:28.383717 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.telecom_churn_project.stg_customer_churn)
+[0m19:47:28.384080 [debug] [Thread-1 (]: Began compiling node model.telecom_churn_project.stg_customer_churn
+[0m19:47:28.391699 [debug] [Thread-1 (]: Writing injected SQL for node "model.telecom_churn_project.stg_customer_churn"
+[0m19:47:28.392571 [debug] [Thread-1 (]: Began executing node model.telecom_churn_project.stg_customer_churn
+[0m19:47:28.426709 [debug] [Thread-1 (]: Writing runtime sql for node "model.telecom_churn_project.stg_customer_churn"
+[0m19:47:28.427406 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_customer_churn"
+[0m19:47:28.427784 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_customer_churn: BEGIN
+[0m19:47:28.428111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:47:28.428791 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m19:47:28.429142 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_customer_churn"
+[0m19:47:28.429583 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_customer_churn: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "model.telecom_churn_project.stg_customer_churn"} */
+
+  
+  create view "dev"."main"."stg_customer_churn__dbt_tmp" as (
+    with src as (
+
+  -- During dev we point at the sample seed
+  select * from "dev"."main"."telecom_customer_churn_sample"
+
+  -- For production, swap to:
+  -- select * from "dev"."raw"."telecom_customer_churn"
+
+),
+
+norm as (
+
+select
+  "CustomerID"                                  as customer_id,
+  Gender                                        as gender,
+  try_cast(Age as integer)                      as age,
+  Married                                       as married,
+  try_cast("Number of Dependents" as integer)   as number_of_dependents,
+  City                                          as city,
+  trim("Zip Code")                              as zip_code,
+  try_cast(Latitude as double)                  as latitude,
+  try_cast(Longitude as double)                 as longitude,
+  try_cast("Number of Referrals" as integer)    as number_of_referrals,
+  try_cast("Tenure in Months" as integer)       as tenure_in_months,
+  Offer                                         as offer,
+  "Phone Service"                               as phone_service,
+  try_cast("Avg Monthly Long Distance Charges" as double) as avg_monthly_long_distance_charges,
+  "Internet Service"                            as internet_service,
+  "Internet Type"                               as internet_type,
+  try_cast("Avg Monthly GB Download" as double) as avg_monthly_gb_download,
+  "Online Security"                             as online_security,
+  "Online Backup"                               as online_backup,
+  "Device Protection Plan"                      as device_protection_plan,
+  "Premium Tech Support"                        as premium_tech_support,
+  "Streaming TV"                                as streaming_tv,
+  "Streaming Movies"                            as streaming_movies,
+  "Streaming Music"                             as streaming_music,
+  "Unlimited Data"                              as unlimited_data,
+  Contract                                      as contract,
+  "Paperless Billing"                           as paperless_billing,
+  "Payment Method"                              as payment_method,
+  try_cast("Monthly Charge" as double)          as monthly_charge,
+  try_cast("Total Charges" as double)           as total_charges,
+  try_cast("Total Refunds" as double)           as total_refunds,
+  try_cast("Total Extra Data Charges" as double) as total_extra_data_charges,
+  try_cast("Total Long Distance Charges" as double) as total_long_distance_charges,
+  try_cast("Total Revenue" as double)           as total_revenue,
+  "Customer Status"                             as customer_status,
+  "Churn Category"                              as churn_category,
+  "Churn Reason"                                as churn_reason,
+  date('2022-04-01') as period_start,
+  date('2022-06-30')   as period_end
+
+from src
+
+)
+
+select * from norm
+  );
+
+[0m19:47:28.757605 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "model.telecom_churn_project.stg_customer_churn"} */
+
+  
+  create view "dev"."main"."stg_customer_churn__dbt_tmp" as (
+    with src as (
+
+  -- During dev we point at the sample seed
+  select * from "dev"."main"."telecom_customer_churn_sample"
+
+  -- For production, swap to:
+  -- select * from "dev"."raw"."telecom_customer_churn"
+
+),
+
+norm as (
+
+select
+  "CustomerID"                                  as customer_id,
+  Gender                                        as gender,
+  try_cast(Age as integer)                      as age,
+  Married                                       as married,
+  try_cast("Number of Dependents" as integer)   as number_of_dependents,
+  City                                          as city,
+  trim("Zip Code")                              as zip_code,
+  try_cast(Latitude as double)                  as latitude,
+  try_cast(Longitude as double)                 as longitude,
+  try_cast("Number of Referrals" as integer)    as number_of_referrals,
+  try_cast("Tenure in Months" as integer)       as tenure_in_months,
+  Offer                                         as offer,
+  "Phone Service"                               as phone_service,
+  try_cast("Avg Monthly Long Distance Charges" as double) as avg_monthly_long_distance_charges,
+  "Internet Service"                            as internet_service,
+  "Internet Type"                               as internet_type,
+  try_cast("Avg Monthly GB Download" as double) as avg_monthly_gb_download,
+  "Online Security"                             as online_security,
+  "Online Backup"                               as online_backup,
+  "Device Protection Plan"                      as device_protection_plan,
+  "Premium Tech Support"                        as premium_tech_support,
+  "Streaming TV"                                as streaming_tv,
+  "Streaming Movies"                            as streaming_movies,
+  "Streaming Music"                             as streaming_music,
+  "Unlimited Data"                              as unlimited_data,
+  Contract                                      as contract,
+  "Paperless Billing"                           as paperless_billing,
+  "Payment Method"                              as payment_method,
+  try_cast("Monthly Charge" as double)          as monthly_charge,
+  try_cast("Total Charges" as double)           as total_charges,
+  try_cast("Total Refunds" as double)           as total_refunds,
+  try_cast("Total Extra Data Charges" as double) as total_extra_data_charges,
+  try_cast("Total Long Distance Charges" as double) as total_long_distance_charges,
+  try_cast("Total Revenue" as double)           as total_revenue,
+  "Customer Status"                             as customer_status,
+  "Churn Category"                              as churn_category,
+  "Churn Reason"                                as churn_reason,
+  date('2022-04-01') as period_start,
+  date('2022-06-30')   as period_end
+
+from src
+
+)
+
+select * from norm
+  );
+
+[0m19:47:28.758503 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m19:47:28.759221 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_customer_churn: ROLLBACK
+[0m19:47:28.766288 [debug] [Thread-1 (]: Failed to rollback 'model.telecom_churn_project.stg_customer_churn'
+[0m19:47:28.766702 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_customer_churn: Close
+[0m19:47:28.768896 [debug] [Thread-1 (]: Runtime Error in model stg_customer_churn (models/staging/stg_customer_churn.sql)
+  Binder Error: Referenced column "CustomerID" not found in FROM clause!
+  Candidate bindings: "Customer ID", "Customer Status", "City", "Zip Code", "Churn Category"
+  
+  LINE 18:   "CustomerID"                                  as customer_id...
+             ^
+[0m19:47:28.770467 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01ba455850>]}
+[0m19:47:28.771139 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model main.stg_customer_churn ................... [[31mERROR[0m in 0.39s]
+[0m19:47:28.771792 [debug] [Thread-1 (]: Finished running node model.telecom_churn_project.stg_customer_churn
+[0m19:47:28.772183 [debug] [Thread-1 (]: Began running node model.telecom_churn_project.stg_zipcode_population
+[0m19:47:28.772620 [debug] [Thread-4 (]: Marking all children of 'model.telecom_churn_project.stg_customer_churn' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_customer_churn (models/staging/stg_customer_churn.sql)
+  Binder Error: Referenced column "CustomerID" not found in FROM clause!
+  Candidate bindings: "Customer ID", "Customer Status", "City", "Zip Code", "Churn Category"
+  
+  LINE 18:   "CustomerID"                                  as customer_id...
+             ^.
+[0m19:47:28.773160 [info ] [Thread-1 (]: 2 of 2 START sql view model main.stg_zipcode_population ........................ [RUN]
+[0m19:47:28.774024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.telecom_churn_project.stg_customer_churn, now model.telecom_churn_project.stg_zipcode_population)
+[0m19:47:28.774398 [debug] [Thread-1 (]: Began compiling node model.telecom_churn_project.stg_zipcode_population
+[0m19:47:28.776814 [debug] [Thread-1 (]: Writing injected SQL for node "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.777448 [debug] [Thread-1 (]: Began executing node model.telecom_churn_project.stg_zipcode_population
+[0m19:47:28.782366 [debug] [Thread-1 (]: Writing runtime sql for node "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.782911 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.783267 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: BEGIN
+[0m19:47:28.783593 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:47:28.784285 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m19:47:28.784631 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.785002 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "model.telecom_churn_project.stg_zipcode_population"} */
+
+  
+  create view "dev"."main"."stg_zipcode_population__dbt_tmp" as (
+    select
+  "Zip Code" as zip_code,
+  cast(Population as integer) as population
+from "dev"."main"."telecom_zipcode_population"
+  );
+
+[0m19:47:28.785782 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:47:28.790755 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.791130 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "model.telecom_churn_project.stg_zipcode_population"} */
+alter view "dev"."main"."stg_zipcode_population__dbt_tmp" rename to "stg_zipcode_population"
+[0m19:47:28.791773 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:47:28.799753 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: COMMIT
+[0m19:47:28.800138 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.800484 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: COMMIT
+[0m19:47:28.814880 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m19:47:28.818885 [debug] [Thread-1 (]: Using duckdb connection "model.telecom_churn_project.stg_zipcode_population"
+[0m19:47:28.819266 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "telecom_churn", "target_name": "dev", "node_id": "model.telecom_churn_project.stg_zipcode_population"} */
+drop view if exists "dev"."main"."stg_zipcode_population__dbt_backup" cascade
+[0m19:47:28.819823 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:47:28.821808 [debug] [Thread-1 (]: On model.telecom_churn_project.stg_zipcode_population: Close
+[0m19:47:28.822406 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '43fea6e3-559e-4db3-9058-da1d32683585', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01b9955850>]}
+[0m19:47:28.822999 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.stg_zipcode_population ................... [[32mOK[0m in 0.05s]
+[0m19:47:28.823590 [debug] [Thread-1 (]: Finished running node model.telecom_churn_project.stg_zipcode_population
+[0m19:47:28.824736 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:47:28.825095 [debug] [MainThread]: On master: BEGIN
+[0m19:47:28.825382 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:47:28.825909 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m19:47:28.826210 [debug] [MainThread]: On master: COMMIT
+[0m19:47:28.826490 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:47:28.826784 [debug] [MainThread]: On master: COMMIT
+[0m19:47:28.827216 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:47:28.827512 [debug] [MainThread]: On master: Close
+[0m19:47:28.827937 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:47:28.828224 [debug] [MainThread]: Connection 'model.telecom_churn_project.stg_zipcode_population' was properly closed.
+[0m19:47:28.828622 [info ] [MainThread]: 
+[0m19:47:28.829090 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 1.96 seconds (1.96s).
+[0m19:47:28.829883 [debug] [MainThread]: Command end result
+[0m19:47:28.848966 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/DBT_Customer_Churn/target/manifest.json
+[0m19:47:28.850424 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/DBT_Customer_Churn/target/semantic_manifest.json
+[0m19:47:28.855044 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/DBT_Customer_Churn/target/run_results.json
+[0m19:47:28.855358 [info ] [MainThread]: 
+[0m19:47:28.855786 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m19:47:28.856149 [info ] [MainThread]: 
+[0m19:47:28.856565 [error] [MainThread]:   Runtime Error in model stg_customer_churn (models/staging/stg_customer_churn.sql)
+  Binder Error: Referenced column "CustomerID" not found in FROM clause!
+  Candidate bindings: "Customer ID", "Customer Status", "City", "Zip Code", "Churn Category"
+  
+  LINE 18:   "CustomerID"                                  as customer_id...
+             ^
+[0m19:47:28.856942 [info ] [MainThread]: 
+[0m19:47:28.857328 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m19:47:28.858403 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.6889772, "process_in_blocks": "148872", "process_kernel_time": 0.28884, "process_mem_max_rss": "155016", "process_out_blocks": "2816", "process_user_time": 2.378687}
+[0m19:47:28.858912 [debug] [MainThread]: Command `dbt run` failed at 19:47:28.858819 after 4.69 seconds
+[0m19:47:28.859259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bedb83d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01bedba650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d01c19400d0>]}
+[0m19:47:28.859600 [debug] [MainThread]: Flushing usage events
+[0m19:47:29.236403 [debug] [MainThread]: An error was encountered while trying to flush usage events
