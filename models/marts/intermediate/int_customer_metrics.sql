@@ -20,4 +20,4 @@ select
   monthly_charge,
   total_revenue,
   churn_flag
-from base;
+from base
